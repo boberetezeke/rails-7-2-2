@@ -21,6 +21,8 @@ gem "jbuilder"
 #
 gem "opal-rails", "~> 2.0.4"
 gem "haml-rails", "~> 2.0"
+gem "turbograft", "~> 0.5.0"
+gem "dynamic_table", git: "https://github.com/boberetezeke/dynamic_table.git", branch: "add_text_change_support_and_check_box"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
