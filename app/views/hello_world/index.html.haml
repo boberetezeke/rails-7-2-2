@@ -1,3 +1,17 @@
 %h1 HelloWorld#index2
+= DynamicTable::Table.new(view: self, base_path: widgets_path, filters: Widget::TABLE_FILTERS, params: params).generate do |dt|
+  %div= text_field_tag(:search)
+  %div= dt.select_tag_options_for_select(:widget_color, Widget::COLORS_HASH)
+  %table
+    %thead
+      %th Name
+      %th Color
+      %th Actions
+    %tbody{dt.refreshable("table-body")}
+      - @widgets.each do |widget|
+        %tr
+          %td= widget.name
+          %td= widget.color
+          %td= link_to('Delete', widget_path(widget), method: :delete)
 :opal
     puts 'Hello from Opal!'
