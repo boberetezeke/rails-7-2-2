@@ -18,7 +18,8 @@ gem "stimulus-rails"
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
-#
+
+gem "jquery-rails"
 gem "opal-rails", "~> 2.0.4"
 gem "haml-rails", "~> 2.0"
 gem "turbograft", "~> 0.5.0"

@@ -1,4 +1,6 @@
 require "opal"
+require 'jquery'
+require 'turbograft'
 require 'dynamic_table'
 
 # Uncomment the following to print out you're hello-world with Opal:
